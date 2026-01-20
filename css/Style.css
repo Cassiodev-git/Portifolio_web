@@ -40,14 +40,14 @@ body::before {
 
 .logo img {
 
-    width: 280px;
+    width: 250px;
     border-radius: 50%;
     height: auto;
 }
 
 .nav-bar ul {
     display: flex;
-    gap: 30px;
+    gap: 40px;
 }
 
 .nav-bar ul li a {
@@ -55,9 +55,9 @@ body::before {
     text-decoration: none;
     font-size: 18px;
 }
-.nav-bar ul li a:hover{
-    color:var(--corTernaternaria);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+.nav-bar ul li a:hover {
+    color: var(--corTernaternaria);
     transition: 0.4s;
 }
 
@@ -67,24 +67,24 @@ body::before {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 10px;
 
 }
 
 /*Hero*/
 
 .Hero {
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 190px;
+    gap: 120px;
     padding: 10px 5px;
 }
 
 .container_hero {
     margin-top: 3rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -119,10 +119,11 @@ body::before {
 }
 
 .img-hero img {
-    max-width: 310px;
-    border-radius: 50%;
+    max-width: 320px;
+    border-radius: 100%;
     object-fit: cover;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 252, 252, 0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .container_hero {
@@ -209,10 +210,16 @@ body::before {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
 }
 
-/* imagem fake */
 .projetos-card__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 160px;
     background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+}
+
+.projetos-card__image img {
+    width: 100px;
 }
 
 /* conteudo */
@@ -274,6 +281,63 @@ body::before {
     background-color: #444;
 }
 
+/* Contato */
+.contato {
+    margin: 6rem auto;
+    text-align: center;
+}
+
+.contato_titulo {
+    font-size: 2rem;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.contato_descricao {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-bottom: 2.5rem;
+}
+
+.contato_icones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.contato_icone {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-size: 2.2rem;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contato_icone:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.6);
+}
+.rodape {
+    margin-top: 5rem;
+    padding: 2rem 1rem;
+
+    text-align: center;
+
+    background-color: #0f0d0e;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.rodape p {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
 
 /*responsividade*/
 
