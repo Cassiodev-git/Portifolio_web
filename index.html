@@ -1,160 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/Style.css">
-  <link rel="stylesheet" href="cssRoot/Root.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-  <title>Cássio_Lúcio_Portifólio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
+  <title>Portfólio</title>
+
+  <link rel="stylesheet" href="./css/Style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="cabecalho_principal">
-    <div class="logo">
-      <img src="imagens/logo4.png">
-    </div>
-    <nav class="nav-bar">
-      <ul>
-        <li class="links_nav"><a href="#sobre">Sobre</a></li>
-        <li class="links_nav"><a href="#projetos">Projeto</a></li>
-        <li class="links_nav"><a href="#contato">Contato</a></li>
+
+  <header class="navbar">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
+      <a href="./curriculo/Cássio_Lúcio_CV.pdf" download class="btn-outline">
+        Currículo
+      </a>
     </nav>
   </header>
 
-  <main class="conteudo_principal">
-    <!--Seção principal-->
-    <section class="Hero" id="sobre">
-      <div class="container_hero">
-        <h1>Cássio Lúcio</h1>
-        <p>Desenvolvedor em formação, focado em backend e construindo meu caminho para me tornar full-stack.
-          <br>Estudo todos os dias, evoluindo com projetos práticos e sempre buscando entender o porquê e como as coisas
-          funcionam.
-        </p>
-        <button type="button" class="btn_Hero" id="btn_cv">Baixar Cv</button>
-      </div>
-      <div class="img-hero">
-        <img src="imagens/foto_perfil.jpg">
-      </div>
-    </section>
-    <!--Minhas tecnologias-->
-    <section class="container_tecnologias" id="container_tecnologias">
-      <h2>Minhas Tecnologias</h2>
-      <div class="icones">
-        <i class="devicon-javascript-plain colored"></i>
-        <i class="devicon-linux-plain colored"></i>
-        <i class="devicon-mariadb-original-wordmark colored"></i>
-        <i class="devicon-mysql-plain-wordmark"></i>
-        <i class="devicon-nodejs-plain-wordmark colored"></i>
-        <i class="devicon-php-plain colored"></i>
-        <i class="devicon-react-original colored"></i>
-        <i class="devicon-typescript-plain colored"></i>
-      </div>
-    </section>
-    <!--projetos em cards-->
-    <section class="projetos" id="projetos">
-      <h2 class="projetos_titulo">Projetos</h2>
-      <!--  Lista de cards -->
-      <div class="projetos__grid">
-        <article class="projetos-card">
-          <div class="projetos-card__image">
-            <img src="imagens/loading.gif">
-          </div>
-          <div class="projetos-card__content">
-            <h3 class="projetos-card__title">Gerenciador Financeiro</h3>
-            <p class="projetos-card__description">
-              Sistema de gestão financeira feito em node e react, consumindo uma api.
-            </p>
-            <div class="projetos-card__links">
-              <a href="#" target="_blank" class="projetos-card__link projetos-card__link--deploy">
-                ...
-              </a>
-              <a href="#" target="_blank" class="projetos-card__link projetos-card__link--github">
-                ...
-              </a>
-            </div>
-          </div>
-        </article>
-        <article class="projetos-card">
-          <div class="projetos-card__image">
-            <img src="imagens/load.gif">
-          </div>
-          <div class="projetos-card__content">
-            <h3 class="projetos-card__title">???</h3>
-            <p class="projetos-card__description">
-              ???
-
-            </p>
-            <div class="projetos-card__links">
-              <a href="#" target="_blank" class="projetos-card__link projetos-card__link--deploy">
-                ...
-              </a>
-              <a href="#" target="_blank" class="projetos-card__link projetos-card__link--github">
-                ...
-              </a>
-            </div>
-          </div>
-        </article>
-        <article class="projetos-card">
-          <div class="projetos-card__image">
-            <img src="imagens/load.gif">
-          </div>
-          <div class="projetos-card__content">
-            <h3 class="projetos-card__title">???</h3>
-            <p class="projetos-card__description">
-              ???
-            </p>
-            <div class="projetos-card__links">
-              <a href="#" target="_blank" class="projetos-card__link projetos-card__link--deploy">
-                ...
-              </a>
-              <a href="#" target="_blank" class="projetos-card__link projetos-card__link--github">
-                ...
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-      <section class="contato" id="contato">
-        <h2 class="contato_titulo">Contato</h2>
-
-        <p class="contato_descricao">
-          Quer conversar comigo? Me chama em qualquer um dos canais abaixo.
-        </p>
-
-        <div class="contato_icones">
-
-          <a href="https://github.com/Cassiodev-git" target="_blank" class="contato_icone">
-            <i class="devicon-github-original"></i>
-          </a>
-
-          <a href="https://www.linkedin.com/in/c%C3%A1ssio-l%C3%BAcio-709694327/" target="_blank" class="contato_icone">
-            <i class="devicon-linkedin-plain"></i>
-          </a>
-
-          <a href="mailto:cassiolucio4@email.com" class="contato_icone">
-            <i class="devicon-google-plain"></i>
-          </a>
-
-        </div>
-      </section>
-    </section>
-    <footer class="rodape">
-      <p>
-        © 2026 — Cássio Lúcio • Desenvolvedor Backend
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Olá, eu sou Cássio 👋</h1>
+      <h2>Desenvolvedor Backend</h2>
+      <p class="about-text">
+        Desenvolvedor Backend com experiência em Node.js e MySQL.
+        Especialista em autenticação JWT e arquitetura organizada.
+        Buscando minha primeira oportunidade como desenvolvedor júnior.
       </p>
-    </footer>
 
-    <script src="javascript/scripts.js">
-    </script>
+      <div class="hero-buttons">
+        <a class="btn-primary" href="#projetos">Ver Projetos</a>
+        <a class="btn-outline" href="#contato">Contato</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="./imagens/foto_perfil.jpg" alt="Foto do desenvolvedor">
+    </div>
+  </section>
+  <section class="technologies" id="tecnologia">
+    <h2>Minhas Tecnologias</h2>
+
+    <div class="tech-grid">
+      <div class="tech-item">HTML5</div>
+      <div class="tech-item">CSS3</div>
+      <div class="tech-item">JavaScript</div>
+      <div class="tech-item">Node.js</div>
+      <div class="tech-item">Express</div>
+      <div class="tech-item">MySQL</div>
+      <div class="tech-item">Vue.js</div>
+      <div class="tech-item">React</div>
+      <div class="tech-item">JWT</div>
+      <div class="tech-item">Git</div>
+      <div class="tech-item">PHP</div>
+    </div>
+  </section>
+  <section class="projects" id="projetos">
+    <h2>Meus Projetos</h2>
+
+    <div class="cards">
+      <div class="card">
+        <a href="./imagens/CompraFacil.jpg" target="_blank">
+          <img src="./imagens/CompraFacil.jpg" alt="Projeto CompraFácil">
+        </a>
+        <h3>CompraFácil</h3>
+        <div class="tags">
+          <span>Vue.js</span>
+          <span>Node.js</span>
+          <span>JWT</span>
+          <span>Mysql</span>
+        </div>
+        <p class="project-description">
+          API de e-commerce desenvolvida com Node.js, Express e MySQL, implementando autenticação JWT e controle de
+          permissões.
+        </p>
+        <a class="btn-primary" href="https://github.com/Cassiodev-git/Ecommece">Git Hub</a>
+      </div>
+
+      <div class="card">
+        <img src="./imagens/loading.gif">
+        <h3>...</h3>
+        <div class="tags">
+          <span>...</span>
+          <span>...</span>
+        </div>
+        <a class="btn-primary">Git Hub</a>
+      </div>
+
+      <div class="card">
+        <img src="./imagens/loading.gif">
+        <h3>...</h3>
+        <div class="tags">
+          <span>...</span>
+          <span>...</span>
+        </div>
+        <a class="btn-primary">Git Hub</a>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contato">
+    <h2>Contato</h2>
+    <p>Vamos conversar? Estou aberto a oportunidades.</p>
+
+    <div class="contact-icons">
+
+      <a href="mailto:cassiolucio4@email.com" target="_blank" class="icon">
+        <i class="fab fa-google"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/c%C3%A1ssio-l%C3%BAcio-zeferino-de-souza-709694327/" target="_blank"
+        class="icon">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+
+      <a href="https://github.com/Cassiodev-git" target="_blank" class="icon">
+        <i class="fab fa-github"></i>
+      </a>
+
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-content">
+      <h3>Cássio Lúcio</h3>
+      <p>Desenvolvedor Fullstack em formação</p>
+
+      <p class="copyright">
+        © 2026 Cássio Lucio. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
 </body>
 
 </html>

@@ -24,7 +24,6 @@ O portfólio está disponível em:
 ## 🛠️ Tecnologias Utilizadas
 - HTML
 - CSS
-- JavaScript
 - GitHub Pages
 
 ---
