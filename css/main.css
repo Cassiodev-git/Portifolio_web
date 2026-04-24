@@ -1,0 +1,377 @@
+/* =========================
+   VARIÁVEIS DE TEMA
+========================= */
+
+:root {
+    --bg: #0f172a;
+    --bg-secondary: #020617;
+    --text: #e2e8f0;
+    --text-muted: #94a3b8;
+    --border: #1e293b;
+    --primary: #38bdf8;
+    --primary-hover: #0ea5e9;
+}
+
+/* LIGHT MODE */
+[data-theme="light"] {
+    --bg: #f8f7f7;
+    --bg-secondary: #ffffff;
+    --text: #000000;
+    --text-muted: #000000;
+    --border: #e2e8f0;
+    --primary: #0ea5e9;
+    --primary-hover: #0284c7;
+}
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background: var(--bg-secondary);
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+
+.nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: var(--text);
+    transition: 0.3s;
+    font-size: 0.95rem;
+}
+
+.nav a:hover {
+    color: var(--primary);
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+.btn-primary,
+.btn-secondary {
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: var(--bg-secondary);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    color: var(--bg-secondary);
+}
+
+.btn-theme {
+    background: none;
+    color: var(--text);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-theme:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    padding: 100px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    margin-bottom: 25px;
+    color: var(--text-muted);
+    max-width: 500px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 15px;
+}
+
+/* =========================
+   IMAGEM HERO
+========================= */
+
+.hero-image img {
+    width: 280px;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects {
+    padding: 80px 0;
+}
+
+.projects h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* =========================
+   TECNOLOGIAS
+========================= */
+
+.tech-stack {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.tech-stack h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: var(--text-muted);
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.tech-item {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech-item:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+/* =========================
+   GRID PROJETOS
+========================= */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* IMG */
+.card img {
+    padding: 10px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+}
+
+/* CONTENT */
+.card-content {
+    padding: 18px;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+.card-tech {
+    font-size: 0.85rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+/* ACTIONS */
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   CONTATO
+========================= */
+
+.contact {
+    padding: 80px 0;
+}
+
+.contact-link {
+    color: var(--primary);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+    color: var(--primary-hover);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+/* TABLET */
+@media (max-width: 1000px) {
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .hero-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+}
