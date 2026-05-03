@@ -21,7 +21,9 @@
                 <a href="#contact">Contato</a>
             </nav>
 
-            <button id="theme-toggle" class="btn-theme">Dark-mode</button>
+            <button id="theme-toggle" class="btn-theme" type="button" aria-label="Alternar tema">
+                Dark-mode
+            </button>
 
         </div>
     </header>
@@ -32,15 +34,15 @@
             <div class="container hero-content">
 
                 <div class="hero-text">
-                    <h2>Olá, eu sou o Cássio</h2>
+                    <h2>Olá, eu sou Cássio Lúcio👋​</h2>
                     <p>
                         Desenvolvedor full-stack com foco em backend, atuando na criação de APIs REST seguras,
-                        autenticação com JWT e sistemas web escaláveis com Node.js, React e MySQL.s.
+                        autenticação com JWT e sistemas web escaláveis com Node.js, React, Vue, MySQL.s e Postgresql.
                     </p>
 
                     <div class="hero-actions">
                         <a class="btn-primary" href="#projects">Ver Projetos</a>
-                        <a href="./assets//Cássio_Lúcio_cv.pdf" download class="btn-secondary">
+                        <a href="./assets/Cássio_Lúcio_cv.pdf" download class="btn-secondary">
                             Baixar CV
                         </a>
                     </div>
@@ -74,8 +76,8 @@
                 </div>
                 <h2>Projetos</h2>
                 <div class="projects-grid">
-                    <div class="card">
-                        <a href="./assets/images/CashFlow.jpg" target="_blank">
+                    <div class="card card-featured">
+                        <a href="./assets/images/CashFlow.jpg" target="_blank" rel="noopener noreferrer">
                             <img src="./assets/images/CashFlow.jpg" alt="Projeto Financeiro">
                         </a>
 
@@ -83,10 +85,13 @@
                             <h3>CashFlow</h3>
 
                             <p class="card-description">
-                                CashFlow é uma aplicação full-stack de controle financeiro pessoal que permite gerenciar
-                                receitas, despesas e categorias de forma organizada. Desenvolvido com Node.js, Express,
-                                React e MySQL, o projeto conta com API REST, autenticação JWT e arquitetura em camadas,
-                                além de uma interface responsiva integrada ao backend.
+                                CashFlow é uma aplicação full-stack de controle financeiro pessoal, criada
+                                para registrar receitas e despesas, organizar transações por categorias e
+                                acompanhar o saldo atual do usuário. O projeto possui autenticação com JWT,
+                                dashboard com resumo financeiro, gráfico de entradas e saídas, busca de
+                                transações, gerenciamento de categorias e integração entre frontend React e
+                                backend Node.js com MySQL.
+
                             </p>
 
                             <p class="card-tech">
@@ -94,50 +99,10 @@
                             </p>
 
                             <div class="card-actions">
-                                <a href="https://cash-flow-seven-sigma.vercel.app/" class="btn-link">Ver Projeto</a>
-                                <a href="https://github.com/Cassiodev-git/CashFlow" class="btn-link">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="./assets//images/loading.gif" alt="...">
-
-                        <div class="card-content">
-                            <h3>...</h3>
-
-                            <p class="card-description">
-                                Projeto em desenvolvimento...
-                            </p>
-
-                            <p class="card-tech">
-                                ...
-                            </p>
-
-                            <div class="card-actions">
-                                <a href="#" class="btn-link">Ver Projeto</a>
-                                <a href="#" class="btn-link">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="./assets/images/loading.gif" alt="API Node">
-
-                        <div class="card-content">
-                            <h3>...</h3>
-
-                            <p class="card-description">
-                                Projeto em desenvolvimento...
-                            </p>
-
-                            <p class="card-tech">
-                                ...
-                            </p>
-
-                            <div class="card-actions">
-                                <a href="#" class="btn-link">Ver Projeto</a>
-                                <a href="#" class="btn-link">GitHub</a>
+                                <a href="https://cash-flow-seven-sigma.vercel.app/" target="_blank"
+                                    rel="noopener noreferrer" class="btn-link">Ver Projeto</a>
+                                <a href="https://github.com/Cassiodev-git/CashFlow" target="_blank"
+                                    rel="noopener noreferrer" class="btn-link">GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -161,7 +126,7 @@
                 <p>
                     LinkedIn:
                     <a href="https://www.linkedin.com/in/c%C3%A1ssio-l%C3%BAcio-709694327/" target="_blank"
-                        class="contact-link">
+                        rel="noopener noreferrer" class="contact-link">
                         linkedin.com
                     </a>
                 </p>
@@ -177,7 +142,6 @@
         </div>
     </footer>
 
-    <script src="./js/main.js"></script>
     <script src="./js/theme.js"></script>
 </body>
 
